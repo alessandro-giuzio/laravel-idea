@@ -4,7 +4,6 @@ use App\Http\Controllers\IdeaController;
 use Illuminate\Support\Facades\Route;
 
 
-// index
 Route::get('/ideas', [IdeaController::class, 'index']);
 Route::get('/ideas/create', [IdeaController::class, 'create']);
 Route::post('/ideas', [IdeaController::class, 'store']);
