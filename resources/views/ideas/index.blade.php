@@ -4,7 +4,7 @@
             <h2 class="font-bold">Your Ideas</h2>
             <ul class="mt-6 grid grid-cols-2 gap-y-6 gap-x-4">
                 @foreach ($ideas as $idea)
-                    <x-idea-card>
+                    <x-idea-card href="/ideas/{{ $idea->id }}">
                         {{ $idea->description }}
                     </x-idea-card>
                 @endforeach
