@@ -8,6 +8,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
     <title>{{ $title }}</title>
     <style>
         .max-w-400 {
@@ -22,10 +25,11 @@
     </style>
 </head>
 
-<body class="bg-gray-700 text-white min-h-screen p-6 max-w-xl mx-auto">
+<body class="min-h-screen" data-theme="night">
+
     <x-nav />
 
-    <main class="mt-6">
+    <main class="max-w-3xl mx-auto">
         {{ $slot }}
     </main>
 </body>
