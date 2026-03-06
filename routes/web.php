@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\SessionController;
 use App\Http\Controllers\IdeaController;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function (){
@@ -28,4 +29,8 @@ Route::middleware('guest')->group(function (){
 Route::view('/', 'index');
 Route::view('/about', 'about');
 Route::view('/contact', 'contact');
-Route::view('/admin', 'admin');
+
+Route::get('/admin', function () {
+    Gate::authorize('view-admin');
+    return view('admin');
+});

@@ -47,6 +47,7 @@ class User extends Authenticatable
         ];
     }
 
+
     public function ideas() : HasMany
     {
         return $this->hasMany(Idea::class);
