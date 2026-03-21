@@ -2,7 +2,7 @@
     'title' => 'My App',
 ])
 <!DOCTYPE html>
-<html lang="en" data-theme="dracula">
+<html lang="en" data-theme="sunset">
 
 <head>
     <meta charset="UTF-8">
