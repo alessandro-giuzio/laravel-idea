@@ -1,6 +1,7 @@
 {
     "agents": [
-        "copilot"
+        "copilot",
+        "claude_code"
     ],
     "herd_mcp": true,
     "mcp": true,
